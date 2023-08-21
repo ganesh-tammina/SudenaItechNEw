@@ -26,9 +26,28 @@
         header.classList.toggle('sticky', window.scrollY > 0)
     });
     </script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112580373-1');
+</script>
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <!-- Navigation-->
         <header>
@@ -958,7 +977,9 @@
     <script src="js/scripts.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/blogs_carousel.js"></script>
-    <script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/custom.js"></script>
+   <script>
         const accordion = document.getElementsByClassName('content-bx');
         for (i=0; i<accordion.length; i++){
         accordion[i].addEventListener('click', function(){
