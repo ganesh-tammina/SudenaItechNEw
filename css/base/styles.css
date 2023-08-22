@@ -3592,6 +3592,10 @@ input[type=text] {
   margin-top: 30px;
 }
 
+.hyper-height .hyper-right-content .add-text a {
+  text-decoration: none !important;
+}
+
 @media (min-width: 991px) {
   .hyper-links li {
     width: 20%;
