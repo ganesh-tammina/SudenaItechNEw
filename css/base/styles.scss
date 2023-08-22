@@ -2957,20 +2957,109 @@ button{
     }
 }
 }
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  background-image: linear-gradient(to right,#ff2500,#ff7100);
-} 
-.spinner {
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  background-color: $color-white;
-  margin: 100px auto;
-  animation: rotate-in 1.2s infinite ease-in-out;
-}  
+// .preloader {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 99999;
+//   background-image: linear-gradient(to right,#ff2500,#ff7100);
+// } 
+// .spinner {
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 5px;
+//   background-color: #fff;
+//   margin: 100px auto;
+//   animation: rotate-in 1.2s infinite ease-in-out;
+// }  
+
+.hyperautomation-content{
+  text-decoration: none;
+}
+
+.hyper-height{
+  height: 500px;
+  display: grid;
+  background-color: #fff;
+  place-content: center;
+  .input-subscribe{
+    display: flex;
+    align-items: center;
+    input{
+      @include large-device(max-width){
+width: 100%;
+      }
+      width: 350px;
+
+      border:0;
+      outline: none;
+      border-bottom: 2px solid;
+      &::placeholder{
+        color: #373D3F;
+        font-weight: 500;
+        padding: 0;
+      }
+    }
+    button{
+      border: 0;
+      background: transparent;
+      border-bottom: 2px solid;
+      color: #000084;
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+  .hyper-right-content{
+    color: #000084;
+    text-transform: uppercase;
+    h3{
+      display: flex;
+      .left-line{
+        width: 60px;
+        background-color: #000084;
+        display: block;
+        height: 2px;
+        margin: 15px 0px 0px 30px;
+      }
+    }
+    p{
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    .add-text{
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+    }
+}
+
+.hyper-links{
+  li{
+    @include large-device(min-width){
+      width: 20%;
+    }
+    a{
+      color: #373D3F !important;
+      font-weight: 500;
+      &:focus{
+        color: #000084 !important;
+      }
+    }
+  }
+}
+
+@include medium-device(max-width){
+  .hyper-height-mobile{
+   height: auto !important;
+  }
+}
+
+.img-align{
+  display: grid;
+  place-content: center;
+}

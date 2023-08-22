@@ -3492,4 +3492,130 @@ input[type=text] {
     margin-bottom: 2rem;
   }
 }
+
+.hyperautomation-content {
+  text-decoration: none;
+}
+
+.hyper-height {
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  background-color: #fff;
+  place-content: center;
+}
+
+.hyper-height .input-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hyper-height .input-subscribe input {
+  width: 350px;
+  border: 0;
+  outline: none;
+  border-bottom: 2px solid;
+}
+
+@media (max-width: 991px) {
+  .hyper-height .input-subscribe input {
+    width: 100%;
+  }
+}
+
+.hyper-height .input-subscribe input::-webkit-input-placeholder {
+  color: #373D3F;
+  font-weight: 500;
+  padding: 0;
+}
+
+.hyper-height .input-subscribe input:-ms-input-placeholder {
+  color: #373D3F;
+  font-weight: 500;
+  padding: 0;
+}
+
+.hyper-height .input-subscribe input::-ms-input-placeholder {
+  color: #373D3F;
+  font-weight: 500;
+  padding: 0;
+}
+
+.hyper-height .input-subscribe input::placeholder {
+  color: #373D3F;
+  font-weight: 500;
+  padding: 0;
+}
+
+.hyper-height .input-subscribe button {
+  border: 0;
+  background: transparent;
+  border-bottom: 2px solid;
+  color: #000084;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.hyper-height .hyper-right-content {
+  color: #000084;
+  text-transform: uppercase;
+}
+
+.hyper-height .hyper-right-content h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hyper-height .hyper-right-content h3 .left-line {
+  width: 60px;
+  background-color: #000084;
+  display: block;
+  height: 2px;
+  margin: 15px 0px 0px 30px;
+}
+
+.hyper-height .hyper-right-content p {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.hyper-height .hyper-right-content .add-text {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+@media (min-width: 991px) {
+  .hyper-links li {
+    width: 20%;
+  }
+}
+
+.hyper-links li a {
+  color: #373D3F !important;
+  font-weight: 500;
+}
+
+.hyper-links li a:focus {
+  color: #000084 !important;
+}
+
+@media (max-width: 766px) {
+  .hyper-height-mobile {
+    height: auto !important;
+  }
+}
+
+.img-align {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
 /*# sourceMappingURL=styles.css.map */
