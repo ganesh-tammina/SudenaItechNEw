@@ -2923,10 +2923,10 @@ button{
     img{
         // animation: movebounce-down 5s infinite ease-in-out;
         width: 100%;
-        object-fit:cover;
-        @include medium-device(min-width){
-          height: calc(100vh - 15vh);
-        }
+        // object-fit:cover;
+        // @include medium-device(min-width){
+        //   height: calc(100vh - 15vh);
+        // }
     }
   }
   .grid-align{
@@ -3070,4 +3070,8 @@ width: 100%;
       object-fit: none;
     }
   
+}
+
+.h-600{
+  height: 600px;
 }

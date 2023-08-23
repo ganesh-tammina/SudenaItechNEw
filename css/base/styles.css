@@ -3450,14 +3450,6 @@ input[type=text] {
 
 .inner-img img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (min-width: 766px) {
-  .inner-img img {
-    height: calc(100vh - 15vh);
-  }
 }
 
 .grid-align {
@@ -3627,5 +3619,9 @@ input[type=text] {
 .img-align img {
   -o-object-fit: none;
      object-fit: none;
+}
+
+.h-600 {
+  height: 600px;
 }
 /*# sourceMappingURL=styles.css.map */
