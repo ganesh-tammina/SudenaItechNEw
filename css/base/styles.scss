@@ -2935,7 +2935,10 @@ button{
 }
 .banner-content-two{
   background-color: #424244;
-  
+  display: flex;
+    align-items: center;
+    height: 600px;
+    justify-content: center;
   
 }
 .banner-area-two{
