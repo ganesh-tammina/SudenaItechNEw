@@ -2980,7 +2980,7 @@ button{
 }
 
 .hyper-height{
-  height: 500px;
+  height: 450px;
   display: grid;
   background-color: #fff;
   place-content: center;
@@ -3017,6 +3017,7 @@ width: 100%;
     text-transform: uppercase;
     h3{
       display: flex;
+      font-size: 26px;
       .left-line{
         width: 60px;
         background-color: #000084;
@@ -3065,4 +3066,8 @@ width: 100%;
 .img-align{
   display: grid;
   place-content: center;
+    img{
+      object-fit: none;
+    }
+  
 }

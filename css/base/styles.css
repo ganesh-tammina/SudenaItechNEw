@@ -3498,7 +3498,7 @@ input[type=text] {
 }
 
 .hyper-height {
-  height: 500px;
+  height: 450px;
   display: -ms-grid;
   display: grid;
   background-color: #fff;
@@ -3570,6 +3570,7 @@ input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 26px;
 }
 
 .hyper-height .hyper-right-content h3 .left-line {
@@ -3621,5 +3622,10 @@ input[type=text] {
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+.img-align img {
+  -o-object-fit: none;
+     object-fit: none;
 }
 /*# sourceMappingURL=styles.css.map */
