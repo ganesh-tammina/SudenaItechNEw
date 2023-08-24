@@ -3446,10 +3446,22 @@ input[type=text] {
 .inner-img {
   text-align: center;
   margin: auto;
-  height: 600px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .inner-img {
+    height: 550px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .inner-img {
+    height: 800px;
+  }
 }
 
 .inner-img img {
@@ -3470,10 +3482,22 @@ input[type=text] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 600px;
+  height: 500px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url(../../assets/industries/industriesnewbg.webp);
+  color: #000084;
+}
+
+@media (max-width: 991px) {
+  .banner-content-two {
+    height: 800px;
+  }
+}
+
+.banner-content-two p {
+  color: #373D3F;
 }
 
 .banner-area-two .row > * {
@@ -3589,7 +3613,6 @@ input[type=text] {
 
 .hyper-height .hyper-right-content p {
   text-transform: capitalize;
-  font-weight: 500;
 }
 
 .hyper-height .hyper-right-content .add-text {
@@ -3635,13 +3658,15 @@ input[type=text] {
      object-fit: none;
 }
 
-.h-600 {
-  height: 600px;
-}
-
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .h-600 {
     height: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .h-600 {
+    height: 800px;
   }
 }
 
@@ -3692,5 +3717,120 @@ input[type=text] {
 .insurance-imgs {
   background-image: url(../../assets/industries/Insurance.webp);
   background-position: left;
+}
+
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: skewX(-15deg);
+          transform: skewX(-15deg);
+  -webkit-animation: color_anim 1s infinite 0.6s;
+          animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cta span:nth-child(2) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.btnspan {
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  color: #0074BE;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+.btnspan:nth-child(2) {
+  width: 20px;
+  margin-left: 2px;
+  position: relative;
+  top: -2px;
+}
+
+/**************SVG****************/
+.one, .two, .three {
+  fill: #0074BE;
+}
+
+path.one {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+}
+
+path.two {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  -webkit-animation: color_anim 1s infinite 0.2s;
+          animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-animation: color_anim 1s infinite 0.6s;
+          animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-animation: color_anim 1s infinite 0.4s;
+          animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@-webkit-keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #000084;
+  }
+  100% {
+    fill: white;
+  }
+}
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #000084;
+  }
+  100% {
+    fill: white;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
