@@ -3446,6 +3446,10 @@ input[type=text] {
 .inner-img {
   text-align: center;
   margin: auto;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .inner-img img {
@@ -3633,5 +3637,60 @@ input[type=text] {
 
 .h-600 {
   height: 600px;
+}
+
+@media (max-width: 766px) {
+  .h-600 {
+    height: 100%;
+  }
+}
+
+.actomotive-img {
+  background-image: url(../../assets/industries/Automotive.webp);
+}
+
+.banking-img {
+  background-image: url(../../assets/industries/Frame29.webp);
+}
+
+.bigdata-img {
+  background-image: url(../../assets/industries/BigData.webp);
+}
+
+.government-img {
+  background-image: url(../../assets/industries/Government.webp);
+}
+
+.cyber-img {
+  background-image: url(../../assets/industries/CyberSecurity.webp);
+}
+
+.energy-img {
+  background-image: url(../../assets/industries/EnergyOilAndGas.webp);
+}
+
+.engneering-img {
+  background-image: url(../../assets/industries/Engineering.webp);
+}
+
+.telecom-img {
+  background-image: url(../../assets/industries/Telecom.webp);
+}
+
+.heath-img {
+  background-image: url(../../assets/industries/HealthCare.webp);
+}
+
+.it-img {
+  background-image: url(../../assets/industries/IT.webp);
+}
+
+.pharma-img {
+  background-image: url(../../assets/industries/Pharma.webp);
+}
+
+.insurance-imgs {
+  background-image: url(../../assets/industries/Insurance.webp);
+  background-position: left;
 }
 /*# sourceMappingURL=styles.css.map */

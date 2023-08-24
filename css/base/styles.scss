@@ -2920,6 +2920,10 @@ button{
   .inner-img{
     text-align: center;
     margin: auto;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     img{
         // animation: movebounce-down 5s infinite ease-in-out;
         width: 100%;
@@ -3077,4 +3081,45 @@ width: 100%;
 
 .h-600{
   height: 600px;
+  @include medium-device(max-width){
+    height: 100%;
+  }
+}
+
+.actomotive-img{
+  background-image: url(../../assets/industries/Automotive.webp);
+}
+.banking-img{
+  background-image: url(../../assets/industries/Frame29.webp);
+}
+.bigdata-img{
+  background-image: url(../../assets/industries/BigData.webp);
+}
+.government-img{
+  background-image: url(../../assets/industries/Government.webp);
+}
+.cyber-img{
+  background-image: url(../../assets/industries/CyberSecurity.webp);
+}
+.energy-img{
+  background-image: url(../../assets/industries/EnergyOilAndGas.webp);
+}
+.engneering-img{
+  background-image: url(../../assets/industries/Engineering.webp);
+}
+.telecom-img{
+  background-image: url(../../assets/industries/Telecom.webp);
+}
+.heath-img{
+  background-image: url(../../assets/industries/HealthCare.webp);
+}
+.it-img{
+  background-image: url(../../assets/industries/IT.webp);
+}
+.pharma-img{
+  background-image: url(../../assets/industries/Pharma.webp);
+}
+.insurance-imgs{
+  background-image: url(../../assets/industries/Insurance.webp);
+  background-position: left;
 }
