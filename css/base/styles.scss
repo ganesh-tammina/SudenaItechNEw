@@ -1600,6 +1600,9 @@ h5 {
   display: flex;
   align-items: center;
   height: 500px;
+  @include medium-device(max-width){
+    height: 600px !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1635,11 +1638,11 @@ h5 {
     top: 0;
     bottom: 0;
     @media (max-width: 767px) {
-        height: 110px;
+        height: 700px;
     }
     
     @media (min-width: 768px) and (max-width: 991px) {
-        height: 342px;
+        height: 500px;
     }
     
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -1650,13 +1653,13 @@ h5 {
 
 @media (max-width: 767px) {
   .heading-2 {
-    height: 110px;
+    height: 700px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .heading-2 {
-    height: 342px;
+    height: 500px;
   }
 }
 
@@ -2516,11 +2519,11 @@ p{
 .noContent{
   display: none !important;
 }
-@include large-device(min-width){
-#section2 , #mision, #commitments {
-  height: calc(100vh - 15vh) !important;
-}
-}
+// @include large-device(min-width){
+// #section2 , #mision, #commitments {
+//   height: calc(100vh - 15vh) !important;
+// }
+// }
 
 // .carrer-bg{
 //   background-image: url('../../assets/images/Careersdb.svg');
