@@ -2797,6 +2797,11 @@ input[type=text] {
   background-color: #fff;
   place-content: center;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .hyper-height {
+    height: 600px;
+  }
+}
 .hyper-height .input-subscribe {
   display: flex;
   align-items: center;
