@@ -13,6 +13,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/base/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </head>
@@ -140,7 +141,12 @@
                 <br>
                                           <br>
                                         </p>
-                                        <a href="contact.html"><button class="button btn btn-primary w-50 common-get-btn">Get in touch</button></a>
+                                        <a onclick="send()"><button id="one" class="button  btn-primary w-50 common-get-btn send-btn"><span class="pr-4">Get in touch</span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                   <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
+                               M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
+                                 </svg></button></a>
+                                        <!-- <a href="contact.html"><button class="button btn btn-primary w-50 common-get-btn">Get in touch</button></a> -->
                                 </div>
                             </div>
     
@@ -268,6 +274,19 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script> 
      <!-- Core theme JS-->
+     <script>
+        $('button').click(function() {
+      $(this).toggleClass('clicked');
+      $('button span').text(function(i, text) {
+        return text === "Sent!" ? "Send" : "Sent!";
+      });
+    });
+    </script>
+    <script>
+        function send(){
+            setTimeout("location.href = 'https://sudenaitech.com/contact.html';",1200);
+        }
+        </script>
      <script src="js/scripts.js"></script>
 </body>
 </html>
