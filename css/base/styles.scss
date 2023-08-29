@@ -3017,6 +3017,9 @@ button{
   display: grid;
   background-color: #fff;
   place-content: center;
+  @media (min-width: 768px) and (max-width: 991px) {
+  height: 600px;
+  }
   .input-subscribe{
     display: flex;
     align-items: center;
@@ -3118,7 +3121,7 @@ width: 100%;
   background-image: url(../../assets/industries/Automotive.webp);
 }
 .banking-img{
-  background-image: url(../../assets/images/Banking/Finance.jpg);
+  background-image: url(../../assets/industries/Banking.jpg);
 }
 .bigdata-img{
   background-image: url(../../assets/industries/BigData.webp);
