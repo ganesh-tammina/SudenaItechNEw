@@ -2982,8 +2982,9 @@ button{
     color: #fff;
     cursor: pointer;
     transition: all 0.25s ease;
-    width: 145px !important;
+    width: 160px !important;
     height: 40px;
+    outline: none;
     @media (min-width: 320px) and (max-width: 767.98px) { 
      margin-bottom: 2rem;
     }
@@ -3262,4 +3263,89 @@ path.two {
   display: flex;
   align-items: center;
   }
+}
+
+
+
+
+.send-btn {
+  overflow: visible;
+  position: relative;
+  height: 60px;
+  cursor: pointer;
+  &:hover {
+    background-color: #000084 !important;
+    
+    svg {
+      transform: rotate(10deg);
+      transition: transform .15s;
+    }
+  }
+  
+  svg {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+    height: 27px;
+    width: auto;
+    transition: transform .15s;
+    
+    path {
+      fill: #fff;
+    }
+  }
+  
+  &.clicked {
+    background-color: #000084;
+    border: 2px solid #cff5b3;
+    color: #fff;
+    
+    padding-right: 6px;
+    animation: bounce-in .3s;
+    cursor: default;
+
+    svg {
+      animation: flyaway 2.3s linear;
+      top: -80px;
+      right: -1000px;
+      
+      path {
+        fill: #000084;
+      }
+    }
+  }
+}
+
+@keyframes flyaway {
+  0%   { transform: rotate(10deg);
+         top: 13px;
+         right: 25px;
+         height: 30px; }
+  5%   { transform: rotate(10deg);
+         top: 13px;
+         right: 0px;
+         height: 30px; }
+  20%   { transform: rotate(-20deg);
+          top: 13px;
+          right: -130px;
+          height: 70px;
+         }  
+  40%   { transform: rotate(10deg);
+          top: -40px;
+          right: -280px;
+          opacity: 1; 
+        }
+  100% { transform: rotate(60deg);
+         top: -200px;
+         right: -1000px;
+         height: 0;
+         opacity: 0;
+         }
+}
+
+@keyframes bounce-in {
+  0% { padding-right: 30px; }
+  40% { padding-right: 6px; }
+  50% { padding-left: 30px; }
+  100% { padding-left: 6px; }
 }

@@ -3530,8 +3530,9 @@ input[type=text] {
   cursor: pointer;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  width: 145px !important;
+  width: 160px !important;
   height: 40px;
+  outline: none;
 }
 
 @media (min-width: 320px) and (max-width: 767.98px) {
@@ -3885,6 +3886,171 @@ path.two {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.send-btn {
+  overflow: visible;
+  position: relative;
+  height: 60px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #000084 !important;
+}
+
+.send-btn:hover svg {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-transition: -webkit-transform .15s;
+  transition: -webkit-transform .15s;
+  transition: transform .15s;
+  transition: transform .15s, -webkit-transform .15s;
+}
+
+.send-btn svg {
+  position: absolute;
+  top: 9px;
+  right: 14px;
+  height: 27px;
+  width: auto;
+  -webkit-transition: -webkit-transform .15s;
+  transition: -webkit-transform .15s;
+  transition: transform .15s;
+  transition: transform .15s, -webkit-transform .15s;
+}
+
+.send-btn svg path {
+  fill: #fff;
+}
+
+.send-btn.clicked {
+  background-color: #000084;
+  border: 2px solid #cff5b3;
+  color: #fff;
+  padding-right: 6px;
+  -webkit-animation: bounce-in .3s;
+          animation: bounce-in .3s;
+  cursor: default;
+}
+
+.send-btn.clicked svg {
+  -webkit-animation: flyaway 2.3s linear;
+          animation: flyaway 2.3s linear;
+  top: -80px;
+  right: -1000px;
+}
+
+.send-btn.clicked svg path {
+  fill: #000084;
+}
+
+@-webkit-keyframes flyaway {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 13px;
+    right: 25px;
+    height: 30px;
+  }
+  5% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 13px;
+    right: 0px;
+    height: 30px;
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    top: 13px;
+    right: -130px;
+    height: 70px;
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: -40px;
+    right: -280px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    top: -200px;
+    right: -1000px;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes flyaway {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 13px;
+    right: 25px;
+    height: 30px;
+  }
+  5% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 13px;
+    right: 0px;
+    height: 30px;
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    top: 13px;
+    right: -130px;
+    height: 70px;
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: -40px;
+    right: -280px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    top: -200px;
+    right: -1000px;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce-in {
+  0% {
+    padding-right: 30px;
+  }
+  40% {
+    padding-right: 6px;
+  }
+  50% {
+    padding-left: 30px;
+  }
+  100% {
+    padding-left: 6px;
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    padding-right: 30px;
+  }
+  40% {
+    padding-right: 6px;
+  }
+  50% {
+    padding-left: 30px;
+  }
+  100% {
+    padding-left: 6px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
